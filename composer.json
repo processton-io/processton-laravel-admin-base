@@ -6,7 +6,7 @@
         "processton-laravel-admin-base"
     ],
     "homepage": "https://github.com/processton-io/processton-laravel-admin-base",
-    "license": "The Unlicense",
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
