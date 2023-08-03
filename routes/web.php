@@ -17,7 +17,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::group('/admin', function() {
+Route::group(['prefix' => '/admin'], function() {
 
 
     Route::get('/dashboard', function () {
