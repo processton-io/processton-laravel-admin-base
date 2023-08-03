@@ -25,10 +25,15 @@ class ProcesstonLaravelAdminBaseServiceProvider extends ServiceProvider
                 __DIR__.'/../config/config.php' => config_path('processton-laravel-admin-base.php'),
             ], 'config');
 
-            // Publishing the views.
-            /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/processton-laravel-admin-base'),
-            ], 'views');*/
+            // Publishing the Dasboard.
+            $this->publishes([
+                __DIR__.'/../resources/js/Pages/Admin/components/' => resource_path('js/Pages/Admin/components/'),
+            ], 'admin-dashboard-components');
+
+            // // Publishing the views.
+            // /*$this->publishes([
+            //     __DIR__.'/../resources/views' => resource_path('views/vendor/processton-laravel-admin-base'),
+            // ], 'views');*/
 
             // Publishing assets.
             /*$this->publishes([
