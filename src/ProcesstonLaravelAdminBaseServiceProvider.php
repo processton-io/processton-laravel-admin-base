@@ -27,8 +27,8 @@ class ProcesstonLaravelAdminBaseServiceProvider extends ServiceProvider
 
             // Publishing the Dasboard.
             $this->publishes([
-                __DIR__.'/../resources/js/Pages/Admin/components/' => resource_path('js/Pages/Admin/components/'),
-            ], 'admin-dashboard-components');
+                __DIR__.'/../resources/js/Pages/Admin/' => resource_path('js/Pages/Admin/'),
+            ], 'js');
 
             // // Publishing the views.
             // /*$this->publishes([
